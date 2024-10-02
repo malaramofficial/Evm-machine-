@@ -1,0 +1,107 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #e3f2fd;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+}
+
+.evm-container {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    width: 350px; /* Container width increased for better layout */
+
+}
+
+.candidate {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 15px 0;
+
+}
+
+button {
+
+    background-color: #1976d2;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px; /* Increased padding for larger button */
+
+    border-radius: 8px; /* Larger border radius for smoother corners */
+
+    font-size: 18px; /* Increased font size */
+
+    cursor: pointer;
+
+    position: relative;
+
+    width: 150px; /* Increased button width */
+
+    height: 60px; /* Increased button height */
+
+}
+
+button:active {
+
+    background-color: #0d47a1;
+
+    transform: translateY(2px);
+
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.indicator {
+
+    height: 12px;
+
+    width: 12px;
+
+    border-radius: 50%;
+
+    background-color: red;
+
+    position: absolute;
+
+    top: 50%;
+
+    right: -20px;
+
+    transform: translateY(-50%);
+
+}
+
+button:active .indicator {
+
+    background-color: green;
+
+}
+
+.results {
+
+    margin-top: 20px;
+
+}

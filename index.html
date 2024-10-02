@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EVM Voting Machine</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="evm-container">
+
+        <div class="candidate">
+
+            <span>रमेश पोटलिया</span>
+
+            <button id="button1" onclick="vote('ramesh')">
+
+                <div class="indicator" id="light1"></div>
+
+            </button>
+
+        </div>
+
+        <div class="candidate">
+
+            <span>केवलचंद सारण</span>
+
+            <button id="button2" onclick="vote('kevalchand')">
+
+                <div class="indicator" id="light2"></div>
+
+            </button>
+
+        </div>
+
+        <div class="results">
+
+            <p>रमेश पोटलिया: <span id="rameshPercent">0</span>%</p>
+
+            <p>केवलचंद सारण: <span id="kevalchandPercent">0</span>%</p>
+
+        </div>
+
+    </div>
+
+    <!-- Firebase App (the core Firebase SDK) -->
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+
+    <!-- Firebase Realtime Database SDK -->
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
